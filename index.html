@@ -9,7 +9,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"/>
+      <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/modal.css">
   </head>
   
   <body>
@@ -60,7 +62,7 @@
         <div class="hero-background">
           <div class="container">
               <h1 class="order-txt link">Эффективные решения для вашего бизнеса</h1>
-            <button class="button order-btn" type="button">Заказать услугу</button>
+            <button data-modal-open class="button order-btn" type="button">Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -409,6 +411,21 @@
           </div>
       </div>
     </footer>
+
+    <!--Modal window-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <p></p>
+          <button class="button modal-close" aria-label="Закрыть" data-modal-close>
+            <svg class="icon" width=11 height=11>
+              <use href="./icons/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+      </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+
   </body>
 </html>
       
