@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/modal.css"/>
   </head>
   
   <body>
@@ -415,16 +414,19 @@
     
     <div class="modal is-hidden" id="modal" data-modal>
       <div class="modal-content" id="modal-content">  
-        <button data-modal-close type="button">close</button>
+        <button class="button modal-close" aria-label="Закрыть" data-modal-close type="button">
+          <svg class="icon" width=11 height=11>
+            <use href="./icons/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
         <form>
-          <input type="text" name="" id="">
         </form>
       </div>
     </div>
-
-    <script src="./js/index.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
+    
     <!--Modal window-->
+  
   </body>
 </html>
       
