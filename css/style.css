@@ -330,6 +330,9 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.team-soc-item:not(:last-child){
+  margin-right: 10px;
+}
 /* Sections Service */
 
 .service-section .service-title,

@@ -9,9 +9,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"/>
-      <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/modal.css"/>
   </head>
   
   <body>
@@ -19,7 +18,7 @@
       <div class="container">
         <div class="header-block">
           <nav class="nav-area">
-             <a href="./index.html" class="logo-web link">
+             <a href="/" class="logo-web link">
                <span>Web</span><span class="logo-st">Studio</span>
              </a>
             <ul class="site-nav list">
@@ -62,7 +61,7 @@
         <div class="hero-background">
           <div class="container">
               <h1 class="order-txt link">Эффективные решения для вашего бизнеса</h1>
-            <button data-modal-open class="button order-btn" type="button">Заказать услугу</button>
+            <button class="button order-btn" type="button" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -357,7 +356,7 @@
         <h2 class="hiding-heading">Свяжитесь с нами</h2>
         <div class="ftr-block">
           <div class="ftr-logo-adr">
-            <a href="./index.html" class="logo-web link">
+            <a href="/" class="logo-web link">
               <span>Web</span><span class="ftr-logo-st">Studio</span>
             </a>
             <address class="ftr-adress">
@@ -413,19 +412,19 @@
     </footer>
 
     <!--Modal window-->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-          <p></p>
-          <button class="button modal-close" aria-label="Закрыть" data-modal-close>
-            <svg class="icon" width=11 height=11>
-              <use href="./icons/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+    
+    <div class="modal is-hidden" id="modal" data-modal>
+      <div class="modal-content" id="modal-content">  
+        <button data-modal-close type="button">close</button>
+        <form>
+          <input type="text" name="" id="">
+        </form>
       </div>
-  </div>
+    </div>
 
-  <script src="./js/modal.js"></script>
-
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <!--Modal window-->
   </body>
 </html>
       
