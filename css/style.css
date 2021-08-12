@@ -10,7 +10,7 @@
   --card-border-grey: #eeeeee;
   --header-underline: #ececec;
   --order-btn: #188ce8;
-  --icon-body-grey: #AFB1B8;
+  --icon-body-grey: #afb1b8;
   --hero-background-grey: #c4c4c4;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --modal-background: rgba(0, 0, 0, 0.2);
@@ -26,7 +26,7 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
   --team-item-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 img {
@@ -133,15 +133,14 @@ body {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color 250ms var(--timing-function)
+  transition: color 250ms var(--timing-function);
 }
 
 .site-nav .link::after,
 .site-nav .link.current::after {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   background-color: var(--brand-blue-color);
@@ -152,7 +151,7 @@ body {
   transform: scalex(0%);
   transition: transform 250ms var(--timing-function);
 }
-.site-nav .link.current::after{
+.site-nav .link.current::after {
   transform: scaleX(100%);
 }
 .site-nav .link:hover::after,
@@ -227,7 +226,7 @@ body {
 
 .hero-background {
   background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-  url(../img/backgroud.jpg);
+    url(../img/backgroud.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   background-size: cover;
@@ -273,7 +272,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.spc-work-icon-block{
+.spc-work-icon-block {
   display: flex;
   margin-bottom: 30px;
   height: 120px;
@@ -281,7 +280,7 @@ body {
   border-radius: 4px;
 }
 
-.spc-work-icon-block > .icon{
+.spc-work-icon-block > .icon {
   margin: auto;
 }
 
@@ -331,7 +330,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-soc-item:not(:last-child){
+.team-soc-item:not(:last-child) {
   margin-right: 10px;
 }
 /* Sections Service */
@@ -401,8 +400,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .team-soc-icon {
@@ -423,7 +421,7 @@ body {
   margin: auto;
 }
 .team-soc-icon:not(:last-child),
-.footer-soc-item:not(:last-child){
+.footer-soc-item:not(:last-child) {
   margin-right: 10px;
 }
 /* Portfolio Card Effects */
@@ -473,8 +471,8 @@ body {
   color: var(--common-color);
   background-color: var(--background-grey);
   padding: 6px 26px;
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .button.filter-button:hover,
@@ -522,28 +520,27 @@ body {
 /* -----End Main Container------ */
 
 /*-----Customer section-----*/
-.customer .list{
+.customer .list {
   display: flex;
 }
-.customer-item:not(:last-child){
-margin-right: 30px;
+.customer-item:not(:last-child) {
+  margin-right: 30px;
 }
-.customer-link-item{
+.customer-link-item {
   display: flex;
   height: 92px;
   width: 170px;
   border: 1px solid var(--icon-body-grey);
   border-radius: 4px;
   fill: var(--icon-body-grey);
-  transition: border-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 .customer-link-item:hover,
-.customer-link-item:focus{
+.customer-link-item:focus {
   border-color: var(--brand-blue-color);
   fill: var(--brand-blue-color);
 }
-.customer-link-item>.icons{
+.customer-link-item > .icons {
   margin: auto;
 }
 
@@ -555,7 +552,7 @@ margin-right: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.ftr-block{
+.ftr-block {
   display: flex;
 }
 
